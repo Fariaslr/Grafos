@@ -33,4 +33,3 @@ grafo = criar_grafo(numero_cidades)
 mostrar_grafo(grafo)
 
 print("Caminho menos custoso: ", caminho_menos_custoso(grafo))
-
