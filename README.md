@@ -4,4 +4,4 @@ Este projeto explora o problema do caixeiro viajante, utilizando grafos para mod
 ## Exemplo
 Veja o exemplo abaixo para entender o funcionamento do algoritmo:
 
-![Caminho do Caixeiro Viajante](image/Grafo.png)
+![Caminho do Caixeiro Viajante](image/cubo.png)
