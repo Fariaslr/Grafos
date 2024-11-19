@@ -20,8 +20,7 @@ def draw_graph(graph, colors):
             node_color=colors, edge_color='gray', font_size=15, font_weight='bold')
 
     plt.title("Grafo Colorido")
-    plt.savefig("image/Grafo_colorido.png")
-    plt.show()
+    plt.savefig("image/colorido.png")
 
 
 def greedy_coloring(graph):

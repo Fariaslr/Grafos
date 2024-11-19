@@ -33,7 +33,8 @@ def draw_graph_with_prim_mst(graph):
     nx.draw_networkx_edge_labels(mst, pos, edge_labels=labels)
     plt.title("Árvore Geradora Mínima (MST) - Prim")
 
-    plt.savefig("image/grafico prim mst.png")
+    plt.savefig("image/prim.png")
+    plt.show()
     plt.close()
 
 

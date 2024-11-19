@@ -20,9 +20,7 @@ def draw_graph(graph):
             edge_color='gray', font_size=15, font_weight='bold')
 
     plt.title("Grafo Euleriano")
-
-    plt.savefig("image/Grafo euleriano.png")
-
+    plt.savefig("image/euleriano.png")
     plt.show()
 
 

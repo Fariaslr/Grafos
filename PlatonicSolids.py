@@ -28,6 +28,7 @@ def is_planar_and_draw(graph, name):
 
     # Salvar a figura como uma imagem PNG
     plt.savefig(f"image/{name.lower().replace(' ', '_')}.png")
+    plt.show()
     plt.close()
 
     return is_planar
@@ -76,7 +77,6 @@ solids = {
     "Icosaedro": icosahedron_edges
 }
 
-# Iterar sobre cada sólido e verificar se é planar
 for name, edges in solids.items():
     is_planar = is_planar_and_draw(edges, name)
     print(f"{name} é {'Planar' if is_planar else 'Não Planar'}")

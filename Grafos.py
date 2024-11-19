@@ -21,10 +21,11 @@ def mostrar_grafo(grafo):
     labels = nx.get_edge_attributes(grafo, 'weight')
     nx.draw(grafo, pos, with_labels=True, node_color='lightblue', node_size=500, font_size=10, font_weight='bold', edge_color='gray')
     nx.draw_networkx_edge_labels(grafo, pos, edge_labels=labels)
+    print("Caminho menos custoso: ", caminho_menos_custoso(grafo))
     plt.show()
 
 def caminho_menos_custoso(grafo):
-    return max(nx.all_pairs_dijkstra_path_length(grafo), key=lambda x: max(x[1].values()))
+    return min(nx.all_pairs_dijkstra_path_length(grafo), key=lambda x: min(x[1].values()))
 
 
 numero_cidades = 5
@@ -32,4 +33,4 @@ grafo = criar_grafo(numero_cidades)
 
 mostrar_grafo(grafo)
 
-print("Caminho menos custoso: ", caminho_menos_custoso(grafo))
+
